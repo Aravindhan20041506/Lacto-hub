@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Products - LACTO HUB</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top luxury-nav">
+        <div class="container">
+            <a class="navbar-brand luxury-brand" href="index.html">
+                <i class="fas fa-cow me-2"></i>LACTO HUB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart 
+                            <span class="badge bg-primary ms-1" id="cartCount">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="products-section py-5 mt-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h1 class="section-title">Our Premium Products</h1>
+                    <p class="section-subtitle">Fresh, pure, and delivered with care</p>
+                </div>
+            </div>
+
+            <!-- Product Categories -->
+            <div class="row g-4" id="productsContainer">
+                <!-- Milk Products -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-milk-bottle fa-4x text-primary"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4>Pure Milk</h4>
+                            <p class="product-description">100% pure and fresh milk, plastic cover packed for hygiene</p>
+                            <div class="product-variants">
+                                <div class="variant">
+                                    <span class="variant-size">500ml</span>
+                                    <span class="variant-price">₹30</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="milk-500" 
+                                            data-name="Pure Milk 500ml" 
+                                            data-price="30">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                <div class="variant">
+                                    <span class="variant-size">1L</span>
+                                    <span class="variant-price">₹55</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="milk-1l" 
+                                            data-name="Pure Milk 1L" 
+                                            data-price="55">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pure Ghee -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-jar fa-4x text-warning"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4>Pure Ghee</h4>
+                            <p class="product-description">Traditional pure ghee made from fresh cream</p>
+                            <div class="product-variants">
+                                <div class="variant">
+                                    <span class="variant-size">250g</span>
+                                    <span class="variant-price">₹180</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="ghee-250" 
+                                            data-name="Pure Ghee 250g" 
+                                            data-price="180">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                <div class="variant">
+                                    <span class="variant-size">500g</span>
+                                    <span class="variant-price">₹350</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="ghee-500" 
+                                            data-name="Pure Ghee 500g" 
+                                            data-price="350">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fresh Curd -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-bowl-food fa-4x text-success"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4>Fresh Curd</h4>
+                            <p class="product-description">Creamy fresh curd made daily with live cultures</p>
+                            <div class="product-variants">
+                                <div class="variant">
+                                    <span class="variant-size">250g</span>
+                                    <span class="variant-price">₹25</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="curd-250" 
+                                            data-name="Fresh Curd 250g" 
+                                            data-price="25">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                <div class="variant">
+                                    <span class="variant-size">500g</span>
+                                    <span class="variant-price">₹45</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="curd-500" 
+                                            data-name="Fresh Curd 500g" 
+                                            data-price="45">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttermilk -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-glass-water fa-4x text-info"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4>Fresh Buttermilk</h4>
+                            <p class="product-description">Refreshing buttermilk with natural probiotics</p>
+                            <div class="product-variants">
+                                <div class="variant">
+                                    <span class="variant-size">250ml</span>
+                                    <span class="variant-price">₹15</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="buttermilk-250" 
+                                            data-name="Fresh Buttermilk 250ml" 
+                                            data-price="15">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                <div class="variant">
+                                    <span class="variant-size">500ml</span>
+                                    <span class="variant-price">₹28</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="buttermilk-500" 
+                                            data-name="Fresh Buttermilk 500ml" 
+                                            data-price="28">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Milk Sweets -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-candy-cane fa-4x text-danger"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4>Rasgulla</h4>
+                            <p class="product-description">Soft and spongy rasgulla made from fresh cottage cheese</p>
+                            <div class="product-variants">
+                                <div class="variant">
+                                    <span class="variant-size">250g</span>
+                                    <span class="variant-price">₹80</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="rasgulla-250" 
+                                            data-name="Rasgulla 250g" 
+                                            data-price="80">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                <div class="variant">
+                                    <span class="variant-size">500g</span>
+                                    <span class="variant-price">₹150</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="rasgulla-500" 
+                                            data-name="Rasgulla 500g" 
+                                            data-price="150">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gulab Jamun -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-circle fa-4x text-warning"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4>Gulab Jamun</h4>
+                            <p class="product-description">Traditional gulab jamun soaked in aromatic syrup</p>
+                            <div class="product-variants">
+                                <div class="variant">
+                                    <span class="variant-size">250g</span>
+                                    <span class="variant-price">₹90</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="gulabjamun-250" 
+                                            data-name="Gulab Jamun 250g" 
+                                            data-price="90">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                <div class="variant">
+                                    <span class="variant-size">500g</span>
+                                    <span class="variant-price">₹170</span>
+                                    <button class="btn btn-luxury btn-sm add-to-cart" 
+                                            data-id="gulabjamun-500" 
+                                            data-name="Gulab Jamun 500g" 
+                                            data-price="170">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="luxury-footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 LACTO HUB. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">Premium Dairy Products | Farm to Table</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./cart.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
